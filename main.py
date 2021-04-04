@@ -93,8 +93,8 @@ def iotlink():
     joinNow(driver)
     time.sleep(3000)
     leave(driver)
-email = "18b61a05d6@nmrec.edu.in"
-psswd = "nmrec123"
+email = "your_email"
+psswd = "Password"
 def cre():
 
     path = "chromedriver.exe"
