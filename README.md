@@ -11,7 +11,7 @@
 ## Setup:
 
 1. Download or Clone Repository
-2. pip install selenium, pip install pip install PyAutoGUI
+2. pip install selenium,  pip install PyAutoGUI
 3. python main.py
 
 you need to manually change the links as well as timings.
