@@ -1,6 +1,6 @@
 ﻿
 
-### A Python Script to Automate Google Meet Joining On Given Time
+### A Python Script to Automate Google Meet Joining On Given Schedule
 
 **Requirement**
 
@@ -24,3 +24,8 @@ Note: Make Sure Chromedriver.exe file should be In same directory as Main.py
 Chrome driver changes from time to time . Download latest one and replacce it with old one in this directory.
 
 Contact me for further queries bhanudeep6@gmail.com , whatsapp 7893328928.
+
+Maintain proper schedule according to your time table (add or remove code).
+
+Timing are also to be provided. 
+
