@@ -29,3 +29,4 @@ Maintain proper schedule according to your time table (add or remove code).
 
 Timing are also to be provided. 
 
+When you end the call make sure to close the opened window.Else the continuity will stop.!!!
