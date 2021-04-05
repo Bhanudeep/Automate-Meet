@@ -15,18 +15,14 @@ from os import system
 
 def Glogin(email, psswd,code,driver):
     driver.get("https://meet.google.com/new")
-    #Email Passed
     search = driver.find_element_by_name("identifier")
     search.send_keys(email)
     search.send_keys(Keys.RETURN)
     driver.implicitly_wait(5)
-    #password Passed 
     search = driver.find_element_by_name("password")
     print(search)
     search.send_keys(psswd)
     search.send_keys(Keys.RETURN)
-
-    #Open Google Meet With Your Code
     sleep(3)
     driver.get("https://meet.google.com/lookup/" + code)
     sleep(3)
@@ -41,14 +37,11 @@ def turnOffMicCam(driver):
     button.click()
     driver.implicitly_wait(3000)
 
-
 def joinNow(driver):
-    print(1)
     time.sleep(5)
     driver.implicitly_wait(2000)
     driver.find_element_by_css_selector(
         'div.uArJ5e.UQuaGc.Y5sE8d.uyXBBb.xKiqt').click()
-    print(1)
 
 def leave(driver):
     button = driver.find_element_by_class_name("s1GInc.zCbbgf")
@@ -56,45 +49,50 @@ def leave(driver):
     driver.quit()
 def mainlink():
     driver=cre()
-    print(1)
-    print(1)
-    print(1)
     code= "deiumbxrex"
     Glogin(email, psswd,code,driver)
-    print(1)
     turnOffMicCam(driver)
     joinNow(driver)
     time.sleep(3000)
-    leave(driver)
+    try:
+        leave(driver)
+    except:
+        print("you already left")
 def sllink():
     driver=cre()
     code= "pxibpxqedo"
     Glogin(email, psswd,code,driver)
-    print(1)
     turnOffMicCam(driver)
     joinNow(driver)
     time.sleep(3000)
-    leave(driver)
+    try:
+        leave(driver)
+    except:
+        print("you already left")
 def tplink():
     driver=cre()
     code="qgkmsfbphn"
     Glogin(email, psswd,code,driver)
-    print(1)
     turnOffMicCam(driver)
     joinNow(driver)
     time.sleep(3000)
-    leave(driver)
+    try:
+        leave(driver)
+    except:
+        print("you already left")
 def iotlink():
     driver=cre()
     code="tdixgbdmxf"
     Glogin(email, psswd,code,driver)
-    print(1)
     turnOffMicCam(driver)
     joinNow(driver)
     time.sleep(3000)
-    leave(driver)
-email = "your_email"
-psswd = "Password"
+    try:
+        leave(driver)
+    except:
+        print("you already left")
+email = "18b61a05d6@nmrec.edu.in"
+psswd = "nmrec123"
 def cre():
 
     path = "chromedriver.exe"
