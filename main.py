@@ -91,8 +91,8 @@ def iotlink():
         leave(driver)
     except:
         print("you already left")
-email = "18b61a05d6@nmrec.edu.in"
-psswd = "nmrec123"
+email = "***********"
+psswd = "*******"
 def cre():
 
     path = "chromedriver.exe"
